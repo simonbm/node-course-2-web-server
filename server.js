@@ -14,7 +14,7 @@ app.use((req, res, next) => {
     var log = `${now}: ${req.method} ${req.url}`;
 
     console.log(log);
-    fs.appendFile('sever.log',log  + '\n', (err) => {
+    fs.appendFile('server.log',log  + '\n', (err) => {
         if (err) {
             console.log('unable to append to server.log');
         }
